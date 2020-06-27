@@ -33,7 +33,7 @@
           -configuration_basename pure_localization.lua
           -load_state_filename $(arg load_state_filename)"
       output="screen">
-      <!-- remap from="scan" to="scan_filtered" / -->
+      <remap from="scan" to="scan_filtered" />
   </node>
 
   <node name="cartographer_occupancy_grid_node" pkg="cartographer_ros"
