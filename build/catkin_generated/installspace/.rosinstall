@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/kuge/catkin_ws2/install/setup.sh

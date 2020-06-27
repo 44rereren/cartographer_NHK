@@ -1,0 +1,2 @@
+cartographer:cartographer_ros/cartographer_ros:cartographer_ros/cartographer_ros_msgs:cartographer_ros/cartographer_rviz:ceres-solver
+-DCATKIN_DEVEL_PREFIX=/home/kuge/catkin_ws2/devel -DCMAKE_INSTALL_PREFIX=/home/kuge/catkin_ws2/install -G Unix Makefiles

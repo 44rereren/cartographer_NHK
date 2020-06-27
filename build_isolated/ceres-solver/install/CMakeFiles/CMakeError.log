@@ -1,0 +1,90 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/kuge/catkin_ws2/build_isolated/ceres-solver/install/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/ninja" "cmTC_8f225"
+[1/2] Building C object CMakeFiles/cmTC_8f225.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_8f225
+FAILED: cmTC_8f225 
+: && /usr/bin/cc   -rdynamic CMakeFiles/cmTC_8f225.dir/CheckSymbolExists.c.o  -o cmTC_8f225   && :
+CMakeFiles/cmTC_8f225.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x14): undefined reference to `pthread_create'
+CheckSymbolExists.c:(.text+0x18): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+
+File /home/kuge/catkin_ws2/build_isolated/ceres-solver/install/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/kuge/catkin_ws2/build_isolated/ceres-solver/install/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/ninja" "cmTC_20112"
+[1/2] Building C object CMakeFiles/cmTC_20112.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_20112
+FAILED: cmTC_20112 
+: && /usr/bin/cc -DCHECK_FUNCTION_EXISTS=pthread_create  -rdynamic CMakeFiles/cmTC_20112.dir/CheckFunctionExists.c.o  -o cmTC_20112  -lpthreads && :
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+
+
+Determining if the include file unordered_map exists failed with the following output:
+Change Dir: /home/kuge/catkin_ws2/build_isolated/ceres-solver/install/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/ninja" "cmTC_6c832"
+[1/2] Building CXX object CMakeFiles/cmTC_6c832.dir/CheckIncludeFile.cxx.o
+FAILED: CMakeFiles/cmTC_6c832.dir/CheckIncludeFile.cxx.o 
+/usr/bin/c++    -fast -fopenmp -fast -fopenmp -o CMakeFiles/cmTC_6c832.dir/CheckIncludeFile.cxx.o -c CheckIncludeFile.cxx
+c++: error: unrecognized command line option ‘-fast’; did you mean ‘-Ofast’?
+c++: error: unrecognized command line option ‘-fast’; did you mean ‘-Ofast’?
+ninja: build stopped: subcommand failed.
+
+
+Determining if the include file tr1/unordered_map exists failed with the following output:
+Change Dir: /home/kuge/catkin_ws2/build_isolated/ceres-solver/install/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/ninja" "cmTC_97fb0"
+[1/2] Building CXX object CMakeFiles/cmTC_97fb0.dir/CheckIncludeFile.cxx.o
+FAILED: CMakeFiles/cmTC_97fb0.dir/CheckIncludeFile.cxx.o 
+/usr/bin/c++    -fast -fopenmp -fast -fopenmp -o CMakeFiles/cmTC_97fb0.dir/CheckIncludeFile.cxx.o -c CheckIncludeFile.cxx
+c++: error: unrecognized command line option ‘-fast’; did you mean ‘-Ofast’?
+c++: error: unrecognized command line option ‘-fast’; did you mean ‘-Ofast’?
+ninja: build stopped: subcommand failed.
+
+
+Determining if the include file memory exists failed with the following output:
+Change Dir: /home/kuge/catkin_ws2/build_isolated/ceres-solver/install/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/ninja" "cmTC_06945"
+[1/2] Building CXX object CMakeFiles/cmTC_06945.dir/CheckIncludeFile.cxx.o
+FAILED: CMakeFiles/cmTC_06945.dir/CheckIncludeFile.cxx.o 
+/usr/bin/c++    -fast -fopenmp -fast -fopenmp -o CMakeFiles/cmTC_06945.dir/CheckIncludeFile.cxx.o -c CheckIncludeFile.cxx
+c++: error: unrecognized command line option ‘-fast’; did you mean ‘-Ofast’?
+c++: error: unrecognized command line option ‘-fast’; did you mean ‘-Ofast’?
+ninja: build stopped: subcommand failed.
+
+
+Determining if the include file tr1/memory exists failed with the following output:
+Change Dir: /home/kuge/catkin_ws2/build_isolated/ceres-solver/install/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/ninja" "cmTC_820f6"
+[1/2] Building CXX object CMakeFiles/cmTC_820f6.dir/CheckIncludeFile.cxx.o
+FAILED: CMakeFiles/cmTC_820f6.dir/CheckIncludeFile.cxx.o 
+/usr/bin/c++    -fast -fopenmp -fast -fopenmp -o CMakeFiles/cmTC_820f6.dir/CheckIncludeFile.cxx.o -c CheckIncludeFile.cxx
+c++: error: unrecognized command line option ‘-fast’; did you mean ‘-Ofast’?
+c++: error: unrecognized command line option ‘-fast’; did you mean ‘-Ofast’?
+ninja: build stopped: subcommand failed.
+
+

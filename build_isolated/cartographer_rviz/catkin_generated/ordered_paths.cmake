@@ -1,0 +1,1 @@
+set(ORDERED_PATHS "/home/kuge/catkin_ws2/install_isolated/lib;/opt/ros/melodic/lib")
