@@ -42,5 +42,5 @@
   <node name="rviz" pkg="rviz" type="rviz" required="true" />
 
   <node name="playbag" pkg="rosbag" type="play"
-      args="--clock -r1.7 $(arg bag_filename)" />
+      args="--clock -r2 $(arg bag_filename)" />
 </launch>
