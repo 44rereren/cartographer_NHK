@@ -17,9 +17,9 @@
 <launch>
   <param name="/use_sim_time" value="false"/>
 
-  <node name="urg_node" pkg="urg_node" type="urg_node" output="screen">
+  <!--node name="urg_node" pkg="urg_node" type="urg_node" output="screen">
     <param name="ip_address" value="192.168.0.10"/>
-  </node>
+  </node-->
 
   <param name="robot_description"
 	 textfile="$(find cartographer_ros)/urdf/backpack_2d.urdf"/>
