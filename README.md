@@ -9,7 +9,21 @@ NHK学生ロボコン専用のcartographer
 
 ## 使用センサ＆PC
 
+・2DLidar
+
+・JetsonNano以上のスペックのPC
+
+・ジャイロセンサ（Yaw角のみ使用）
+
 ## 使用ROSパッケージ
+
+・urg_node
+
+・scan_filtered
+
+・rosserial
+
+・cartographer
 
 ## 開発小話
 
