@@ -17,6 +17,7 @@
 /home/kuge/catkin_ws2/install_isolated/share/cartographer_ros/launch/demo_backpack_2d_localization.launch
 /home/kuge/catkin_ws2/install_isolated/share/cartographer_ros/launch/assets_writer_backpack_3d.launch
 /home/kuge/catkin_ws2/install_isolated/share/cartographer_ros/launch/offline_bag_backpack_2d.launch
+/home/kuge/catkin_ws2/install_isolated/share/cartographer_ros/launch/setup.launch
 /home/kuge/catkin_ws2/install_isolated/share/cartographer_ros/launch/pure_localization.launch
 /home/kuge/catkin_ws2/install_isolated/share/cartographer_ros/launch/grpc_demo_backpack_2d_localization.launch
 /home/kuge/catkin_ws2/install_isolated/share/cartographer_ros/launch/demo_backpack_3d_localization.launch
@@ -34,6 +35,7 @@
 /home/kuge/catkin_ws2/install_isolated/share/cartographer_ros/launch/demo_pr2.launch
 /home/kuge/catkin_ws2/install_isolated/share/cartographer_ros/urdf/backpack_3d.urdf
 /home/kuge/catkin_ws2/install_isolated/share/cartographer_ros/urdf/backpack_2d.urdf
+/home/kuge/catkin_ws2/install_isolated/share/cartographer_ros/configuration_files/pr_40_2.bag.pbstream
 /home/kuge/catkin_ws2/install_isolated/share/cartographer_ros/configuration_files/assets_writer_backpack_2d.lua
 /home/kuge/catkin_ws2/install_isolated/share/cartographer_ros/configuration_files/demo_3d.rviz
 /home/kuge/catkin_ws2/install_isolated/share/cartographer_ros/configuration_files/pr2.lua

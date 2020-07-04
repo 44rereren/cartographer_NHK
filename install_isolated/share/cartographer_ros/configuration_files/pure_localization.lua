@@ -3,7 +3,7 @@ include "backpack_2d.lua"
 TRAJECTORY_BUILDER.pure_localization = true;
 
 TRAJECTORY_BUILDER_2D.min_range = 0.01
-TRAJECTORY_BUILDER_2D.max_range = 6. -- red:6 blue:8
+TRAJECTORY_BUILDER_2D.max_range = 5. -- red:6 blue:8
 TRAJECTORY_BUILDER_2D.missing_data_ray_length = 0.
 TRAJECTORY_BUILDER_2D.real_time_correlative_scan_matcher.translation_delta_cost_weight = 2
 TRAJECTORY_BUILDER_2D.real_time_correlative_scan_matcher.rotation_delta_cost_weight = 1e-2

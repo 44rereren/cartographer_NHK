@@ -73,6 +73,7 @@
 #/home/kuge/catkin_ws2/src/cartographer_ros/cartographer_ros/configuration_files/demo_3d.rviz
 #/home/kuge/catkin_ws2/src/cartographer_ros/cartographer_ros/configuration_files/offline_bag.lua
 #/home/kuge/catkin_ws2/src/cartographer_ros/cartographer_ros/configuration_files/pr2.lua
+#/home/kuge/catkin_ws2/src/cartographer_ros/cartographer_ros/configuration_files/pr_40_2.bag.pbstream
 #/home/kuge/catkin_ws2/src/cartographer_ros/cartographer_ros/configuration_files/pure_localization.lua
 #/home/kuge/catkin_ws2/src/cartographer_ros/cartographer_ros/configuration_files/revo_lds.lua
 #/home/kuge/catkin_ws2/src/cartographer_ros/cartographer_ros/configuration_files/taurob_tracker.lua
@@ -98,8 +99,12 @@
 #/home/kuge/catkin_ws2/src/cartographer_ros/cartographer_ros/launch/offline_backpack_3d.launch
 #/home/kuge/catkin_ws2/src/cartographer_ros/cartographer_ros/launch/offline_bag_backpack_2d.launch
 #/home/kuge/catkin_ws2/src/cartographer_ros/cartographer_ros/launch/pure_localization.launch
+#/home/kuge/catkin_ws2/src/cartographer_ros/cartographer_ros/launch/setup.launch
 #/home/kuge/catkin_ws2/src/cartographer_ros/cartographer_ros/launch/taurob_tracker.launch
 #/home/kuge/catkin_ws2/src/cartographer_ros/cartographer_ros/launch/visualize_pbstream.launch
+#/home/kuge/catkin_ws2/src/cartographer_ros/cartographer_ros/map
+#/home/kuge/catkin_ws2/src/cartographer_ros/cartographer_ros/map/pr_108.bag.pbstream
+#/home/kuge/catkin_ws2/src/cartographer_ros/cartographer_ros/map/pr_40_2.bag.pbstream
 #/home/kuge/catkin_ws2/src/cartographer_ros/cartographer_ros/package.xml
 #/home/kuge/catkin_ws2/src/cartographer_ros/cartographer_ros/scripts
 #/home/kuge/catkin_ws2/src/cartographer_ros/cartographer_ros/scripts/cartographer_grpc_server.sh
@@ -107,6 +112,14 @@
 #/home/kuge/catkin_ws2/src/cartographer_ros/cartographer_ros/scripts/dev/compare_localization_to_offline_trajectory.sh
 #/home/kuge/catkin_ws2/src/cartographer_ros/cartographer_ros/scripts/remove_leading_slashes.py
 #/home/kuge/catkin_ws2/src/cartographer_ros/cartographer_ros/scripts/tf_remove_frames.py
+#/home/kuge/catkin_ws2/src/cartographer_ros/cartographer_ros/shell_script
+#/home/kuge/catkin_ws2/src/cartographer_ros/cartographer_ros/shell_script/blue.sh
+#/home/kuge/catkin_ws2/src/cartographer_ros/cartographer_ros/shell_script/carto_blue.sh
+#/home/kuge/catkin_ws2/src/cartographer_ros/cartographer_ros/shell_script/carto_red.sh
+#/home/kuge/catkin_ws2/src/cartographer_ros/cartographer_ros/shell_script/pose_blue.sh
+#/home/kuge/catkin_ws2/src/cartographer_ros/cartographer_ros/shell_script/pose_red.sh
+#/home/kuge/catkin_ws2/src/cartographer_ros/cartographer_ros/shell_script/red.sh
+#/home/kuge/catkin_ws2/src/cartographer_ros/cartographer_ros/shell_script/usb.sh
 #/home/kuge/catkin_ws2/src/cartographer_ros/cartographer_ros/urdf
 #/home/kuge/catkin_ws2/src/cartographer_ros/cartographer_ros/urdf/backpack_2d.urdf
 #/home/kuge/catkin_ws2/src/cartographer_ros/cartographer_ros/urdf/backpack_3d.urdf

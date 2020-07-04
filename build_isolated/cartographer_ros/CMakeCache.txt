@@ -17,8 +17,14 @@
 //The threading library used by boost-thread
 BOOST_THREAD_LIBRARY:FILEPATH=/usr/lib/aarch64-linux-gnu/libpthread.so
 
+//Builds the googlemock subproject
+BUILD_GMOCK:BOOL=ON
+
 //build features that require Cartographer gRPC support
 BUILD_GRPC:BOOL=OFF
+
+//Builds the googletest subproject
+BUILD_GTEST:BOOL=OFF
 
 //Build shared libraries (DLLs).
 BUILD_SHARED_LIBS:BOOL=OFF
@@ -359,6 +365,18 @@ UBUNTU:BOOL=TRUE
 //LSB Distrib - codename tag
 UBUNTU_BIONIC:BOOL=TRUE
 
+//Path to a file.
+_gmock_INCLUDES:FILEPATH=/usr/include/gmock/gmock.h
+
+//Path to a file.
+_gmock_SOURCES:FILEPATH=/usr/src/gmock/src/gmock.cc
+
+//Path to a file.
+_gtest_INCLUDES:FILEPATH=/usr/include/gtest/gtest.h
+
+//Path to a file.
+_gtest_SOURCES:FILEPATH=/usr/src/gtest/src/gtest.cc
+
 //The directory containing a CMake configuration file for actionlib.
 actionlib_DIR:PATH=/opt/ros/melodic/share/actionlib/cmake
 
@@ -414,7 +432,7 @@ genpy_DIR:PATH=/opt/ros/melodic/share/genpy/cmake
 geometry_msgs_DIR:PATH=/opt/ros/melodic/share/geometry_msgs/cmake
 
 //Value Computed by CMake
-gmock_BINARY_DIR:STATIC=/home/kuge/catkin_ws2/build_isolated/cartographer_ros/gmock
+gmock_BINARY_DIR:STATIC=/home/kuge/catkin_ws2/build_isolated/cartographer_ros/gtest/googlemock
 
 //Dependencies for the target
 gmock_LIB_DEPENDS:STATIC=general;-lpthread;
@@ -429,7 +447,13 @@ gmock_build_tests:BOOL=OFF
 gmock_main_LIB_DEPENDS:STATIC=general;-lpthread;
 
 //Value Computed by CMake
-gtest_BINARY_DIR:STATIC=/home/kuge/catkin_ws2/build_isolated/cartographer_ros/gmock/gtest
+googletest-distribution_BINARY_DIR:STATIC=/home/kuge/catkin_ws2/build_isolated/cartographer_ros/gtest
+
+//Value Computed by CMake
+googletest-distribution_SOURCE_DIR:STATIC=/usr/src/googletest
+
+//Value Computed by CMake
+gtest_BINARY_DIR:STATIC=/home/kuge/catkin_ws2/build_isolated/cartographer_ros/gtest/googlemock/gtest
 
 //Dependencies for the target
 gtest_LIB_DEPENDS:STATIC=general;-lpthread;
@@ -711,7 +735,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=4
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=5
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -755,7 +779,7 @@ CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: EIGEN_INCLUDE_DIR
 EIGEN_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //Details about finding GMock
-FIND_PACKAGE_MESSAGE_DETAILS_GMock:INTERNAL=[gmock_main;-lpthread][/usr/src/googletest/googlemock/gtest/include][v()]
+FIND_PACKAGE_MESSAGE_DETAILS_GMock:INTERNAL=[gmock_main;-lpthread;-lpthread][/usr/src/googletest/googlemock/gtest/include;/usr/src/googletest/googlemock/gtest/include][v()]
 //Details about finding Lua
 FIND_PACKAGE_MESSAGE_DETAILS_Lua:INTERNAL=[/usr/lib/aarch64-linux-gnu/liblua5.2.so;/usr/lib/aarch64-linux-gnu/libm.so][/usr/include/lua5.2][v5.2.4()]
 //Details about finding PCL
@@ -765,7 +789,7 @@ FIND_PACKAGE_MESSAGE_DETAILS_PCL_COMMON:INTERNAL=[/usr/lib/aarch64-linux-gnu/lib
 //Details about finding PkgConfig
 FIND_PACKAGE_MESSAGE_DETAILS_PkgConfig:INTERNAL=[/usr/bin/pkg-config][v0.29.1()]
 //Details about finding PythonInterp
-FIND_PACKAGE_MESSAGE_DETAILS_PythonInterp:INTERNAL=[/usr/bin/python][v2.7.17(2)]
+FIND_PACKAGE_MESSAGE_DETAILS_PythonInterp:INTERNAL=[/usr/bin/python][v2.7.17()]
 //Details about finding Threads
 FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
 //Details about finding eigen
@@ -776,11 +800,21 @@ GLOG_INCLUDE_DIR-ADVANCED:INTERNAL=1
 GLOG_LIBRARY-ADVANCED:INTERNAL=1
 GMOCK_BOTH_LIBRARIES:INTERNAL=
 GMOCK_FOUND:INTERNAL=TRUE
+GMOCK_FROM_SOURCE_FOUND:INTERNAL=TRUE
+GMOCK_FROM_SOURCE_INCLUDE_DIRS:INTERNAL=/usr/include
+GMOCK_FROM_SOURCE_LIBRARIES:INTERNAL=gmock
+GMOCK_FROM_SOURCE_LIBRARY_DIRS:INTERNAL=/home/kuge/catkin_ws2/build_isolated/cartographer_ros/gmock
+GMOCK_FROM_SOURCE_MAIN_LIBRARIES:INTERNAL=gmock_main
 GMOCK_INCLUDE_DIRS:INTERNAL=/usr/src/googletest/googlemock/gtest/include
 GMOCK_LIBRARIES:INTERNAL=gmock_main;-lpthread
 GMOCK_MAIN_LIBRARIES:INTERNAL=
 GTEST_BOTH_LIBRARIES:INTERNAL=
 GTEST_FOUND:INTERNAL=TRUE
+GTEST_FROM_SOURCE_FOUND:INTERNAL=TRUE
+GTEST_FROM_SOURCE_INCLUDE_DIRS:INTERNAL=/usr/include
+GTEST_FROM_SOURCE_LIBRARIES:INTERNAL=gtest
+GTEST_FROM_SOURCE_LIBRARY_DIRS:INTERNAL=/home/kuge/catkin_ws2/build_isolated/cartographer_ros/gtest
+GTEST_FROM_SOURCE_MAIN_LIBRARIES:INTERNAL=gtest_main
 //ADVANCED property for variable: GTEST_INCLUDE_DIR
 GTEST_INCLUDE_DIR-ADVANCED:INTERNAL=1
 GTEST_INCLUDE_DIRS:INTERNAL=/usr/src/googletest/googlemock/gtest/include
