@@ -1,7 +1,7 @@
 cartographer_NHK
 ====
 
-hoge
+NHK学生ロボコン専用のcartographer
 
 ## Description
 
