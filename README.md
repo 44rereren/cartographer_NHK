@@ -20,5 +20,3 @@ cartographerを使う以前は、RC19で新潟大学が使ってたという理�
 [github](https://github.com/44rereren)
 
 [blog](https://rerereren.hatenablog.com/)
-
-[email](b1801631@planet.kanazawa-it.ac.jp)
